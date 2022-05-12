@@ -14,6 +14,8 @@ public class Eunbi {
 	  if(a>0 && b<10) {
 	    System.out.println(a+b);
 	  }
+	  
+	  
 	}
 
 }

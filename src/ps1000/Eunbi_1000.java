@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Eunbi {
+public class Eunbi_1000 {
 
   public static void main(String[] args) {	  
     
@@ -25,7 +25,7 @@ public class Eunbi {
   }
   
   // InputStreamReader, runtime 124ms
-  // ¹ÙÀÌÆ®½ºÆ®¸²À» ¹®ÀÚ½ºÆ®¸²À¸·Î º¯È¯
+  // ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
   public void two() {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
     try {
@@ -43,7 +43,7 @@ public class Eunbi {
   }
 
   // StringTokenizer, runtime 124ms
-  // ¹®ÀÚ¿­À» ÁöÁ¤ÇÑ ±¸ºÐÀÚ·Î ÂÉ°³ÁÖ´Â Å¬·¡½º, ÂÉ°³Áø ¹®ÀÚ¿­ = Token
+  // ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú·ï¿½ ï¿½É°ï¿½ï¿½Ö´ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½, ï¿½É°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ = Token
   public void three() {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     try {

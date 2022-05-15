@@ -11,18 +11,15 @@ public class Mira_2558{
 	public static void main(String args[]){
 		
 		Scanner sc = new Scanner(System.in);  // 객체생성. System.in 은 입력한 값을 Byte 단위로 읽는 것을 뜻한다.
-						                      // 보통 가장 많이쓰이는 객체명으로는 in 과 scan, sc이 있다.
+						      // 보통 가장 많이쓰이는 객체명으로는 in 과 scan, sc이 있다.
 		
 		int a, b;
-		a = sc.nextInt();                     // in.next() : 문자열 입력시 공백 전 까지만 받음
-		b = sc.nextInt();                     // in.nextLine() : 문자열 입력시 Enter 입력 전까지만 받음
+		a = sc.nextInt();                     // .next() : 문자열 입력시 공백 전 까지만 받음
+		b = sc.nextInt();                     // .nextLine() : 문자열 입력시 Enter 입력 전까지만 받음
 		
-		if (0 < a && b < 10) {
-			System.out.println(a + b);
-		}
+		System.out.println(a + b);            // a + b 결과 값을 출력.
 		
-		
-		sc.close();
+		sc.close();   // Scanner 함수의 사용이 종료되었으므로 객체 sc를 종료해서 메모리에서 반환.
 	}
 }
 
@@ -30,28 +27,28 @@ public class Mira_2558{
 // Reference Type
 	// >> Class Type - String Class 
     
-		String 문자열_space = in.next();
-		String 문자열_Enter = in.nextLine();
+		String 문자열_space = .next();
+		String 문자열_Enter = .nextLine();
 		
         
 // Primitive Type
 	// >> boolean Type
     
-		boolean 부울 = in.nextBoolean();
+		boolean 부울 = .nextBoolean();
 		
         
 	// >> Numeric Type
 		// >> >> Integer Type
         
-		byte 바이트 = in.nextByte();
-		short 쇼트 = in.nextShort();
-		int 정수 = in.nextInt();
-		long 롱 = in.nextLong();
+		byte 바이트 = .nextByte();
+		short 쇼트 = .nextShort();
+		int 정수 = .nextInt();
+		long 롱 = .nextLong();
 		
         
  
 		// >> >> Floating Point Type
         
-		double 더블형 = in.nextDouble();
-		float 플롯 = in.nextFloat();
+		double 더블형 = .nextDouble();
+		float 플롯 = .nextFloat();
 */

@@ -22,10 +22,13 @@ public class Eunbi_1000 {
     if(a>0 && b<10) {
       System.out.println(a+b);
     }
+    
+    sc.close();
   }
   
   // InputStreamReader, runtime 124ms
-  // ����Ʈ��Ʈ���� ���ڽ�Ʈ������ ��ȯ
+  // Byte스트림을 String스트림으로 변환해준다. 
+  // System.in == InputStream 내부 필드
   public void two() {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
     try {
@@ -36,14 +39,15 @@ public class Eunbi_1000 {
       if(a>0 && b<10) {
         System.out.println(a+b);
       }
+      br.close();
     } catch (IOException e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
+    
   }
 
   // StringTokenizer, runtime 124ms
-  // ���ڿ��� ������ �����ڷ� �ɰ��ִ� Ŭ����, �ɰ��� ���ڿ� = Token
+  // 지정한 구분자로 문자열을 자르는 클래스, 쪼개진 문자열 = Token
   public void three() {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     try {
@@ -54,8 +58,8 @@ public class Eunbi_1000 {
       if(a>0 && b<10) {
         System.out.println(a+b);
       }
+      br.close();
     } catch (IOException e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
   }

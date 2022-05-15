@@ -1,36 +1,49 @@
 package ps10951;
 
 import java.io.BufferedReader;
-import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 
 public class Eunbi_10951 {
 
   public static void main(String[] args) throws Exception {
-    // TODO Auto-generated method stub
-    BufferedReader br = new BufferedReader(new java.io.InputStreamReader(System.in));
-    StringBuffer sb = new StringBuffer();
+    
+  }
+  
+  
+  //런타임 에러
+  public static void one() throws Exception {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    StringBuffer list = new StringBuffer();
+    StringTokenizer st;
     String str = "";
-    while (true) {
-      str = br.readLine();
-      if(str.isEmpty() || str==null) {
-        break;
-      }
-      sb.append(str+",");
+    while(!(str = br.readLine()).equals("")) {
+      st = new StringTokenizer(str, " ");
+      list.append( Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) );
+      list.append("\n");
     }
-
-    StringTokenizer st = new StringTokenizer(sb.toString(),",");
-    while(st.hasMoreTokens()) {
-      str = st.nextToken();
-      StringTokenizer st2 = new StringTokenizer(str);
-      if(st2.countTokens()<2) {
-        continue;
-      }
-      int a = Integer.parseInt(st2.nextToken());
-      int b = Integer.parseInt(st2.nextToken());
-      System.out.println(a+b);
-    }
+    
+    System.out.println(list);
+    br.close();
   }
 
+  //runtime 128ms 
+  public static void two() throws Exception {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    StringBuffer list = new StringBuffer();
+    StringTokenizer st;
+    String str = "";
+    while((str = br.readLine()) != null) {
+      st = new StringTokenizer(str, " ");
+      list.append( Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) );
+      list.append("\n");
+    }
+    
+    System.out.println(list);
+    br.close();
+  }
+  
+  // 주소값 비교(==), 값 비교(equals)
+  // String 은 레퍼런스 타입, 주소값을 가지기 때문에 비교 연산자 사용 가능
 }

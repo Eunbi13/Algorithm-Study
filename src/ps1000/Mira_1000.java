@@ -1,3 +1,5 @@
+package ps1000;
+
 import java.util.Scanner;  // canner 패키지는 java.util 패키지에 있기 때문에 java.util.Scanner;로 해줌. 반드시 Scanner 의 첫 단어는 대문자
 
 public class Mira_1000{

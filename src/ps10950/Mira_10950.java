@@ -1,3 +1,5 @@
+package ps10950;
+
 import java.util.Scanner;
 
 public class Mira_10950 {

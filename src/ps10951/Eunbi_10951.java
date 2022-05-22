@@ -8,7 +8,6 @@ import java.util.StringTokenizer;
 public class Eunbi_10951 {
 
   public static void main(String[] args) throws Exception {
-    
   }
   
   
@@ -35,7 +34,7 @@ public class Eunbi_10951 {
     StringTokenizer st;
     String str = "";
     while((str = br.readLine()) != null) {
-      st = new StringTokenizer(str, " ");
+      st = new StringTokenizer(str);
       list.append( Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) );
       list.append("\n");
     }

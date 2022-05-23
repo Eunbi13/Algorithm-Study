@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String args[]){   // String args[]  or  String[] args 
+                                              // 프로그램 아규먼트 : 프로그램이 시작될때 받는 명령어를 파라미터로 받는다.
+        Scanner sc = new Scanner(System.in);
+        
+        int T = sc.nextInt();
+        
+        for(int i = 1; i <= T; i++ ){ 
+            
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+     
+            System.out.println("Case #" + i + ": " + (a + b));
+        }
+        sc.close();
+    }   
+}
+
+
+// String args[] 로 사용한게 4초 빠름.
+
+

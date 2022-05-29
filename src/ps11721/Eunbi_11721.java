@@ -32,7 +32,7 @@ public class Eunbi_11721 {
   }
   
 //  runtime 132ms
-//  sb.insert(10, "\n"); 10번쨰 자리에 "\n"을 추가한다. sb.length()도 증가한다.
+//  sb.insert(10, "\n"); 10번째 자리에 "\n"을 추가한다. sb.length()도 증가한다.
   public static void two() throws Exception{
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     StringBuffer sb = new StringBuffer(br.readLine());

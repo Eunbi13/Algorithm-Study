@@ -1,10 +1,10 @@
-package ps2438;
+package ps2439;
 
 import java.util.Scanner;
 
-public class Jeongwon_2438 {
+public class Jeongwon_2439 {
 
-	// 324ms
+	// 376ms
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -15,6 +15,13 @@ public class Jeongwon_2438 {
 		n = scanner.nextInt();
 
 		for (int i = 1; i < n + 1; i++) {
+
+			// 공백
+			for (int y = n - 1; y >= i; y--) {
+
+				System.out.print(" ");
+
+			}
 
 			// 별
 			for (int x = 0; x < i; x++) {

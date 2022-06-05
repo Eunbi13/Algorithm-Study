@@ -16,12 +16,19 @@ public class Jeongwon_2442 {
 
 		for (int i = 1; i < n + 1; i++) {
 
-			// 공백
+			// 공백1, 428ms
 			for (int z = i; z < n; z++) {
 
 				System.out.print(" ");
 
 			}
+
+			// 공백2, 488ms
+//			for (int z = n - 1; z >= i; z--) {
+//
+//				System.out.print(" ");
+//
+//			}
 
 			// 별
 			for (int x = 0; x < i; x++) {

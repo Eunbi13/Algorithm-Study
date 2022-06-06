@@ -9,9 +9,8 @@ import java.util.StringTokenizer;
 public class Eunbi_10818 {
 
   public static void main(String[] args) throws Exception{
-
   }
-  // Integer.MIN_VALUE;
+
   public static void one()throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(br.readLine());
@@ -36,7 +35,8 @@ public class Eunbi_10818 {
     sb.append(min).append(" ").append(max);
     System.out.println(sb);    
   }
-  
+
+//203100  
   public static void two() throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(br.readLine());
@@ -61,6 +61,28 @@ long a = System.nanoTime();
     System.out.println(sb);    
 long b = System.nanoTime();
 System.out.println(b-a);    
+  }
+
+//14400
+  public static void three() throws Exception{
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    int n = Integer.parseInt(br.readLine());
+    StringBuffer sb = new StringBuffer(br.readLine());
+    StringTokenizer st = new StringTokenizer(sb.toString());
+    int min = Integer.MIN_VALUE;
+    int max = Integer.MAX_VALUE;
+long a = System.nanoTime();    
+    for(int i = 0; i<n; i++) {
+      int temp = Integer.parseInt(st.nextToken());
+      if(temp>max) {
+        max = temp;
+      }
+      if(temp<min) {
+        min = temp;
+      }
+    }
+long b = System.nanoTime();
+System.out.println(b-a);   
   }
 
 }

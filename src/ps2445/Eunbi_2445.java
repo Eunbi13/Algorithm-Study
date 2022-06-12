@@ -64,6 +64,8 @@ public class Eunbi_2445 {
     }
 
     bw.flush();
+    br.close();
+    bw.close();
   }
 
   public static void three() throws Exception{
@@ -71,8 +73,8 @@ public class Eunbi_2445 {
     StringBuffer sb = new StringBuffer();
     int n = Integer.parseInt(br.readLine())*2;
     int k = 1;
-    for(int i=0; i<n; i++) {
-      for(int j=0; j<n; j++) {
+    for(int i=0; i<n; i++) { //높이
+      for(int j=0; j<n; j++) { //넓이
         if(j<k || (n-j)<=k) {
           sb.append("*");
         }else {
@@ -88,6 +90,7 @@ public class Eunbi_2445 {
     }
     
     System.out.println(sb);
+    br.close();
   }
   
 }

@@ -28,6 +28,7 @@ public class Eunbi_2522 {
     }
     
     System.out.println(sb);
+    br.close();
     
   }
 

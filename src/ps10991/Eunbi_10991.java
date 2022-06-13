@@ -7,7 +7,7 @@ public class Eunbi_10991 {
   
 
   public static void main(String[] args)throws Exception {
-
+one();
   }
 
   public static void one() throws Exception {

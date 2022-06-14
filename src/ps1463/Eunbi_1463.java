@@ -25,12 +25,13 @@ public class Eunbi_1463 {
   static int dp(int n) {
    if(memo[n] ==null) {
     if(n%6 == 0) {
-     memo[n] =Math.min(dp(n-1) , Math.min( dp(n/3), dp(n/2))) +1;
+     memo[n] =Math.min(Math.min( dp(n/3), dp(n/2)), dp(n-1)) +1;
+//     memo[n] =Math.min(dp(n-1), Math.min( dp(n/3), dp(n/2))) +1;
     }
     else if(n % 3==0) {
-      memo[n] =  Math.min(dp(n-1), dp(n/3)) +1;
+      memo[n] =  Math.min( dp(n/3) , dp(n-1)) +1;
     }else if(n % 2==0) {
-      memo[n] =Math.min(dp(n-1)  ,dp(n/2))+1;
+      memo[n] =Math.min(dp(n/2), dp(n-1))+1;
     }else {
       memo[n] = dp(n-1)+1;
     }

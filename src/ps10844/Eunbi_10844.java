@@ -1,26 +1,22 @@
-package ps11726;
+package ps10844;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Eunbi_11726 {
-
-//  static Integer [] memo;
+public class Eunbi_10844 {
+  
+//  static Integer [] m;
 
   public static void main(String[] args) throws Exception{
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(br.readLine());
-    int [] m = new int [n+2];
-    m[0] = 0;
-    m[1] = 1;
-    m[2] = 2;
-    for(int i = 3; i<=n; i++) {
-      m[i] = (m[i-1]+m[i-2])%10007;
+    Integer [][] m = new Integer [n+1][10];
+    for(int i = 0; i<10; i++) {
+      m[1][i] = 1;
     }
     
     System.out.println(m[n]);
     br.close();
   }
-
 
 }

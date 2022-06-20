@@ -10,12 +10,12 @@ public class Jeongwon_11726 {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
-
-        scanner.close();
         
         int n;
 
         n = scanner.nextInt();
+
+        scanner.close();
 
         // 런타임 에러
         // dp = new Integer[n + 1];
@@ -44,7 +44,7 @@ public class Jeongwon_11726 {
 
     // 208ms
     public static void main2(String[] args) {
-        
+
         Scanner sc = new Scanner(System.in);
 
         sc.close();

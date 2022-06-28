@@ -24,7 +24,7 @@ public class Eunbi_11053 {
         len++;
         dp[len] = arr[i];
       }else {
-        if()
+        
         dp[idx] = arr[i];
       }
     }

@@ -45,6 +45,12 @@ public class Eunbi_2156 {
       }
     }
   }
+  
+  static int topDown(int n) {
+    
+    
+    return dp[n];
+  }
 
 
 }

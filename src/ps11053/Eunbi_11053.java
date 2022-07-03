@@ -13,7 +13,7 @@ public class Eunbi_11053 {
     int n = Integer.parseInt(br.readLine());
     StringTokenizer st = new StringTokenizer(br.readLine());
     arr = new int [n];
-    dp = new int [n+1];
+    dp = new int [n];
     for(int i = 0; i<n; i++) {
       arr[i] = Integer.parseInt(st.nextToken());
     }
@@ -41,6 +41,9 @@ public class Eunbi_11053 {
 
 
   static int findFlag(int idx, int i) { //4 4
+    
+/* 1번 방법 : 문제점 의미 없이 한번 더 루프를 돈다. 
+ * 
     int half = idx/2; //2
     int k = half; //2
     
@@ -58,27 +61,26 @@ public class Eunbi_11053 {
       }
     } 
     return half;
-  }
-// idx = 4, i = 4
-//  
-//  int start = 0;
-//
-//  while (start <= idx){                   // 0<=4  start = 3 <= idx = 2
-//      int mid = (start + idx) / 2;        // mid = 2 //mid = (3+4)/2 = 3  //mid = 3+4 /2 = 2
-//  
-//      if (dp[mid] < arr[i]){              //dp[2] =4 < arr[4] = 3 // 
-//          start = mid + 1;                //start = 3;
-//      }
-//      else if (dp[mid] > arr[i]){         // dp[3] =4 > arr[4] = 3
-//          idx = mid - 1;                  //idx = 2;
-//      }
-//      else{
-//          return mid;
-//      }
-//  }
-//
-//  return start;
+*/
+  int start = 0;
 
+  while (start <= idx){                   // 0<=4  start = 3 <= idx = 2
+      int mid = (start + idx) / 2;        // mid = 2 //mid = (3+4)/2 = 3  //mid = 3+4 /2 = 2
+  
+      if (dp[mid] < arr[i]){              //dp[2] =4 < arr[4] = 3 // 
+          start = mid + 1;                //start = 3;
+      }
+      else if (dp[mid] > arr[i]){         // dp[3] =4 > arr[4] = 3
+          idx = mid - 1;                  //idx = 2;
+      }
+      else{
+          return mid;
+      }
+  }
+
+  return start;
+
+  }
 
   static void one() throws Exception{
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

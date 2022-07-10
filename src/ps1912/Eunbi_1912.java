@@ -29,6 +29,8 @@ public class Eunbi_1912 {
       maxN = max(dp[i], maxN);
     }
     
+//    re(N-1);
+    
     System.out.println(maxN);
   }
 
@@ -38,7 +40,7 @@ public class Eunbi_1912 {
 //  Top-Down
   static int re(int i) {
     
-    if(dp[i]!=null) {
+    if(dp[i]==null) {
       dp[i] = max( re(i-1) + arr[i], arr[i]);
       maxN = max(dp[i], maxN);
     }

@@ -11,11 +11,7 @@ public class Eunbi_2133 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
   //   int N = Integer.parseInt(br.readLine());
 
-  n = sc.nextInt();
-  if(n<5){
-      n = 4;
-  }
-  int [] dp = new int[n+1];
+
   //  dp = new Integer [N+1];
   //  dp[0] = 1;
   //  dp[2] = 3;
@@ -31,16 +27,23 @@ public class Eunbi_2133 {
   //  System.out.println(dp[N]);
 
    int n = Integer.parseInt(br.readLine());
-   int [] dp = new int[n+4];
-   dp[0] = 1;
-   dp[2] = 3;
-   dp[4] = 11;
-   int tmp =0;
-   for (int i=6; i<=n; i+=2) {
-       dp[i] = dp[i-2] * 3 + 2 + (tmp+=dp[i-4]*2);
-   }
+  //  int [] dp = new int[n+4];
+   int t = 0;
+   if(n<5){
+      t = 5;
+    }else{
+      t = n+1;
+    }
+    int [] dp = new int[t];
+    dp[0] = 1;
+    dp[2] = 3;
+    dp[4] = 11;
+    int tmp =0;
+    for (int i=6; i<=n; i+=2) {
+        dp[i] = dp[i-2] * 3 + 2 + (tmp+=dp[i-4]*2);
+    }
 
-   System.out.println(dp[n]);
+    System.out.println(dp[n]);
   }
   
  

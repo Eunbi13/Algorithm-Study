@@ -11,7 +11,11 @@ public class Eunbi_2133 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
   //   int N = Integer.parseInt(br.readLine());
 
-
+  n = sc.nextInt();
+  if(n<5){
+      n = 4;
+  }
+  int [] dp = new int[n+1];
   //  dp = new Integer [N+1];
   //  dp[0] = 1;
   //  dp[2] = 3;
